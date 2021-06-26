@@ -19,7 +19,9 @@ mkdir ~/.config/guix
 wget https://raw.githubusercontent.com/qqq0ppp/guix/main/channels.scm -P /home/me/.config/guix
 guix pull
 
-# Install packages
-git clone https://github.com/qqq0ppp/guix.git
-ls guix/packages/ | xargs -I tt guix package --install-from-file=guix/packages/tt
-rm -r guix
+guix install qutebrowser
+
+## Install packages
+#git clone https://github.com/qqq0ppp/guix.git
+#ls guix/packages/ | xargs -I tt guix package --install-from-file=guix/packages/tt
+#rm -r guix
